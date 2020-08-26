@@ -1,0 +1,39 @@
+{
+  "name": "monosnap-clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "js/main.js",
+  "scripts": {
+    "start": "electron .",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
+    "package-win": "electron-packager . Monosnap-Clone --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"MonoSnap Clone\"",
+    "package-linux": "electron-packager . electron-tutorial-app --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/png/1024x1024.png --prune=true --out=release-builds"
+  },
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "aws-sdk": "^2.739.0",
+    "dotenv": "^8.2.0",
+    "electron": "9.2.0",
+    "electron-packager": "^15.0.0",
+    "mocha": "^8.1.1",
+    "screenshot-desktop": "^1.12.2",
+    "should": "~7.1.0",
+    "supertest": "^4.0.2",
+    "uuid": "^8.3.0"
+  },
+  "dependencies": {
+    "bulma": "^0.9.0",
+    "electron": "^9.2.1",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.0",
+    "multer": "^1.1.0"
+  }
+}

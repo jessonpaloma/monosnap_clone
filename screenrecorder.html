@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>MonoSnap Clone</title>
+        <link rel="stylesheet" href="css/photon.min.css">
+        <link rel="stylesheet" href="css/photon.css">
+        <link rel="stylesheet" href="css/main.css">
+      <style>
+       
+      </style>
+      </head>
+
+    <body>
+        <div class="video-container" style="padding:20px;">
+            <center>
+        <video height="240" controls></video>
+        <br><br>
+        <button id = "videoSelectBtn" class="button is-text" style="color:gray; background-color:white;border:none; border-radius:0px;width:300px;">Choose a video source</button> <br><br> 
+        <button id="startBtn" class="btn btn-large " style="color:white;border:none; border-radius:0px;"> <span class="icon icon-play"></span> </button>
+        <button id="stopBtn" class="btn btn-large " style="color:white;border:none; border-radius:0px;"> <span class="icon icon-stop"></button>
+        <button id="pauseBtn" class="btn btn-large " style="color:white;border:none; border-radius:0px;"> <span class="icon icon-pause"></button>
+            <br><br><p style="color:white">File will be save at <span id="output-path"  ></span></p>
+    </center>
+        </div>
+        
+        <script src="js/renderer.js"></script>
+
+    </body>
+</html>

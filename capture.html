@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fullscreen Capture</title>
+    <link rel="stylesheet" href="css/photon.min.css">
+    <link rel="stylesheet" href="css/photon.css">
+    <style>
+        li{
+         
+          display: inline-block;
+          margin-left: 30px;
+        }
+        img:hover {
+          cursor: pointer;
+        }
+    </style>
+  </head>
+  <body style="background-color:gray;">
+    
+    <ul>
+        <span title="Capture and Save"><li><a id="local" style="font-size: 35px;color:white"> <span class="icon icon-camera"></span></a></li></span>
+        <span title="Upload Saved Screenshot/s"><li><a id="upload" style="font-size: 35px;color:white"><span class="icon icon-cloud"></span></a></li></span>
+        <span title="Cancel and Go Back"><li><a id="closeBtn" style="font-size: 35px;color: white;"><span class="icon icon-cancel"></span></li></span>
+    </ul>
+     
+<script src="js/fullscreen.js"></script>
+<script src="js/close.js"></script>
+<script>
+  require('./js/server.js');
+</script>
+
+  </body>
+</html>
